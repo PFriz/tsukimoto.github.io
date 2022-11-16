@@ -106,7 +106,7 @@ p {
 .waves {
   position:relative;
   width: 100%;
-  height:15vh;
+  height: 22vh;
   margin-bottom:-7px; /*Fix for safari gap*/
   min-height:100px;
   max-height:150px;
@@ -166,7 +166,7 @@ p {
 
 <body data-bs-spy="scroll" data-bs-target="#navScroll">
 
-  <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+  <nav id="navScroll" class="navbar navbar-expand-lg navbar-dark fixed-top" tabindex="0">
     <div class="container-fluid">
       <button class="navbar-toggler float-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -204,17 +204,18 @@ p {
   <main class="header">
     <div class="inner-header w-100 overflow-hidden" id="top">
 
-      <div class="container position-relative" style="border: 5px;">
+      <div class="container position-relative" style="max-width: none;">
         <div class="col-12 col-lg-8 mt-0 h-100 w-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left"
           style="background: linear-gradient(180deg, rgba(31, 29, 39, 1) 0%, rgba(25, 132, 146, 0.5) );">
 
         </div>
         <div class="row">
 
-          <div class="col-lg-7 py-vh-6 mt-10" style="z-index: 10;" data-aos="fade-right">
+          <div class="col-lg-7 py-vh-6 mt-10" style="z-index: 10;margin-top: 100px" data-aos="fade-right">
             <img src="img/logo560x560.png" alt="." height="400px" />
           </div>
-          <div class="col-lg-5 py-vh-12" data-aos="fade-right">
+          <div class="col-lg-5 py-vh-6" style="margin-top: 100px" data-aos="fade-right">
+            
             <img src="img/logo560x560.png" alt="." height="400px" />
           </div>
 
@@ -240,7 +241,7 @@ p {
       </div>
 
     </div>
-
+  </main>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/aos.js"></script>
