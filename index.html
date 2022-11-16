@@ -78,11 +78,11 @@ p {
 .header {
   position:relative;
   text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-  color:white;
+  /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
+  color: white;
 }
 .logo {
-  width:50px;
+  width:250px;
   fill:white;
   padding-right:15px;
   display:inline-block;
@@ -90,14 +90,14 @@ p {
 }
 
 .inner-header {
-  height:65vh;
+  height: 100vh;
   width:100%;
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
 }
 
 .flex { /*Flexbox for containers*/
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -114,7 +114,7 @@ p {
 
 .content {
   position:relative;
-  height:20vh;
+  height:100vh;
   text-align:center;
   background-color: white;
 }
@@ -201,17 +201,20 @@ p {
     </div>
   </nav>
 
-  <main class="header" style="background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) )">
-    <div class="inner-header flex w-100 overflow-hidden bg-gray-100" id="top">
+  <main class="header">
+    <div class="inner-header w-100 overflow-hidden" id="top">
 
-      <div class="container position-relative">
+      <div class="container position-relative" style="border: 5px;">
         <div class="col-12 col-lg-8 mt-0 h-100 w-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left"
-          style="background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) );">
+          style="background: linear-gradient(180deg, rgba(31, 29, 39, 1) 0%, rgba(25, 132, 146, 0.5) );">
 
         </div>
         <div class="row">
 
-          <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
+          <div class="col-lg-7 py-vh-6 mt-10" style="z-index: 10;" data-aos="fade-right">
+            <img src="img/logo560x560.png" alt="." height="400px" />
+          </div>
+          <div class="col-lg-5 py-vh-12" data-aos="fade-right">
             <img src="img/logo560x560.png" alt="." height="400px" />
           </div>
 
@@ -220,20 +223,20 @@ p {
         </div>
 
         <!--Waves Container-->
-<div>
-  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-  <defs>
-  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-  </defs>
-  <g class="parallax">
-  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-  <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-  </g>
-  </svg>
-  </div>
+        <div>
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
       </div>
 
     </div>
