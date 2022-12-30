@@ -79,7 +79,7 @@ p {
 .header {
   position:relative;
   text-align:center;
-  /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); 
   color: white;
 }
 .logo {
@@ -162,6 +162,20 @@ p {
     font-size:24px;
   }
 }
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 255) !important;
+  background-color: #214b63;
+}
+
+.amr-2 a{
+  margin-right: 10px;
+}
+
+.py-vh-6 {
+    padding-top: 16vh;
+    padding-bottom: 16vh;
+}
 </style>
 </head>
 
@@ -182,18 +196,18 @@ p {
           </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#services" aria-label="Brings you to the frontpage">
-              Services
+            <a class="nav-link" href="#inicio" aria-label="Inicio">
+              Inicio
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#aboutus">
-              About us
+            <a class="nav-link" href="#Autores">
+              Autores y Obras
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#numbers">
-              Numbers
+            <a class="nav-link" href="#Librerias">
+              Librerias asociadas
             </a>
           
         </ul>
@@ -203,7 +217,7 @@ p {
   </nav>
 
   <main >
-    <section class="header">
+    <section class="header" id="inicio">
       <div class="inner-header w-100 overflow-hidden" id="top">
 
         <div class="container position-relative" style="max-width: none;">
@@ -213,12 +227,15 @@ p {
           </div>
           <div class="row" style="height: 80vh">
 
-            <div class="col-lg-7 py-vh-6 mt-10" style="z-index: 10;margin-top: 100px" >
-              <img src="img/logo560x560.png" alt="." height="400px" data-aos="fade-left"/>
+            <div class="col-lg-12 py-vh-6 mt-10" style="z-index: 10;margin-top: 100px" >
+              <img src="img/logo560x560.png" alt="." height="300px" data-aos="fade-left"/>
             </div>
-            <div class="col-lg-5 py-vh-6" style="margin-top: 100px" >
+            <div class="col-lg-12 py-vh-6" style="z-index: 1;vertical-align: bottom; text-align:left;" >
+              <div class="flex" style="margin:0px auto">
+                <h1 >Tsukimoto</h1>
+                <h2>Editorial</h2>
+              </div>
               
-              <img src="img/logo560x560.png" alt="." height="400px" data-aos="fade-right"/>
             </div>
           </div>
 
@@ -262,8 +279,7 @@ p {
             </div>
           </div>
           <div class="row d-flex justify-content-end gy-5 mt-5">
-            
-            <div class="col-md-5 col-lg-5 py-vh-4 pb-0" data-aos="fade-down" data-aos-delay="400">
+            <div class="col-md-7 col-lg-6" data-aos="fade-down" data-aos-delay="400">
               <h3 class="py-5 border-top border-dark text-black-50">¿Cómo lo lograremos? La respuesta es clara...</h3>
               <p>Claro que lo lograremos, aunque para ello necesitemos de la ayuda de todos tenemos un plan para 
                 devolver la lectura al hobby que era pero con un condimento especial: <del>monitas chinas</del>
@@ -281,16 +297,120 @@ p {
 
               </p>
             </div>
-            <div class="col offset-1"></div> 
+            <div class="col col-md-3 col-lg-4">
+              <img class="img-fluid" alt="Foto de Thought Catalog en Unsplash" src="img/books.jpg" />
+            </div>
+            
           </div>
           
   
         </div>
       </div>
     </section>
-   <section>
+    <section id="Autores">
+      <!--autores y librerias-->
+      <div class="bg-dark w-100 overflow-hidden">
+        <div class="container py-vh-6" style="margin-right: auto; margin-left: auto;">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8 text-center">
+              <h2 class="display-6">Nuestros Autores</h2>
+              <p class="lead text-light">
+                Conoce a nuestros autores e ilustradores y sus obras.  ¡Siganlos en sus redes sociales!
+                
+              </p>
+            </div>
+            <div class="col-12 mt-4">
+              <div class="row row-cols-1 row-cols-md-2 g-5 d-flex align-items-center">
+                
+                <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-right">
+                  <div class="card p-4 mt-3 border-0">
+                    <div class="card-body">
+                      <img src="img/autormigri.png" width="48" height="48" class="rounded-circle" alt=""
+                          data-aos="fade">
+                      <span class="h3 fw-bold text-black-50">SilverMigri</span><br>
+                      <small class="text-muted">Autor</small>
+                      <div class="border-top pt-3">
+                        <blockquote class="blockquote">
+                          <p>"No me pagan mucho, así que compren mi libro :D (cambiar)"</p>
+                        </blockquote>
+                        <blockquote class="blockquote">
+                          <span class="fw-bold text-black-50 h6">Obras</span>
+                          <p class="h6">Una Historia llamada Destino</p>
+                        </blockquote>
+                      </div>
+                      <div class="justify-content-between border-top pt-3 amr-2">
+                        <a href="https://www.tiktok.com/@silvermigri"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@SilverMigri"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://web.facebook.com/SilverMigri/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/silvermigri/"><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-right">
+                  <div class="card p-4 mt-3 border-0">
+                    <div class="card-body">
+                      <img src="img/autormigri.png" width="48" height="48" class="rounded-circle" alt=""
+                          data-aos="fade">
+                      <span class="h3 fw-bold text-black-50">SilverMigri</span><br>
+                      <small class="text-muted">Autor</small>
+                      <div class="border-top pt-3">
+                        <blockquote class="blockquote">
+                          <p>"No me pagan mucho, así que compren mi libro :D (cambiar)"</p>
+                        </blockquote>
+                        <blockquote class="blockquote">
+                          <span class="fw-bold text-black-50 h6">Obras</span>
+                          <p class="h6">Una Historia llamada Destino</p>
+                        </blockquote>
+                      </div>
+                      <div class="justify-content-between border-top pt-3 amr-2">
+                        <a href="https://www.tiktok.com/@silvermigri"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@SilverMigri"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://web.facebook.com/SilverMigri/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/silvermigri/"><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-right">
+                  <div class="card p-4 mt-3 border-0">
+                    <div class="card-body">
+                      <img src="img/autormigri.png" width="48" height="48" class="rounded-circle" alt=""
+                          data-aos="fade">
+                      <span class="h3 fw-bold text-black-50">SilverMigri</span><br>
+                      <small class="text-muted">Autor</small>
+                      <div class="border-top pt-3">
+                        <blockquote class="blockquote">
+                          <p>"No me pagan mucho, así que compren mi libro :D (cambiar)"</p>
+                        </blockquote>
+                        <blockquote class="blockquote">
+                          <span class="fw-bold text-black-50 h6">Obras</span>
+                          <p class="h6">Una Historia llamada Destino</p>
+                        </blockquote>
+                      </div>
+                      <div class="justify-content-between border-top pt-3 amr-2">
+                        <a href="https://www.tiktok.com/@silvermigri"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@SilverMigri"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://web.facebook.com/SilverMigri/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/silvermigri/"><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section >
 
-   </section>
+    <section id="Librerias">
+
+    </section>
 
 
   </main>
@@ -364,5 +484,23 @@ p {
       duration: 800, // values from 0 to 3000, with step 50ms
     });
   </script>
+  <script>
+    let scrollpos = window.scrollY;
+    const header = document.querySelector(".navbar");
+    const header_height = header.offsetHeight;
+
+    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
+    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
+
+    window.addEventListener('scroll', function () {
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= header_height) { add_class_on_scroll(); }
+      else { remove_class_on_scroll(); }
+
+      console.log(scrollpos);
+    })
+  </script>
+  <script src="https://kit.fontawesome.com/b98cee38da.js" crossorigin="anonymous"></script>
 </body>
 </html>
