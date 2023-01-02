@@ -634,8 +634,8 @@ progress {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
-  margin-right: calc(var(--bs-gutter-x) * -.5);
-  margin-left: calc(var(--bs-gutter-x) * -.5);
+  margin-right: calc(var(--bs-gutter-x));
+  margin-left: calc(var(--bs-gutter-x));
 }
 .row > * {
   flex-shrink: 0;
@@ -3933,7 +3933,7 @@ textarea.form-control-lg {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -6187,6 +6187,7 @@ textarea.form-control-lg {
 .fixed-top {
   position: fixed;
   top: 0;
+  /* width: 100%; */
   right: 0;
   left: 0;
   z-index: 1030;

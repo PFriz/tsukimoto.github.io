@@ -54,129 +54,165 @@
     }
   </style>
 
-<style>
+  <style>
 
-HTML CSSResult Skip Results Iframe
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+    HTML CSSResult Skip Results Iframe
+    @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
-body {
-  margin:0;
-}
+    body {
+      margin:0;
+    }
 
-h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight:300;
-  letter-spacing: 2px;
-  font-size:48px;
-}
-p {
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 1px;
-  font-size:14px;
-  color: #333333;
-}
+    h1 {
+      font-family: 'Lato', sans-serif;
+      font-weight:300;
+      letter-spacing: 2px;
+      font-size:48px;
+    }
+    p {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+      font-size:14px;
+      color: #333333;
+    }
 
-.header {
-  position:relative;
-  text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); 
-  color: white;
-}
-.logo {
-  width:250px;
-  fill:white;
-  padding-right:15px;
-  display:inline-block;
-  vertical-align: middle;
-}
+    .header {
+      position:relative;
+      text-align:center;
+      background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); 
+      color: white;
+    }
+    .logo {
+      width:250px;
+      fill:white;
+      padding-right:15px;
+      display:inline-block;
+      vertical-align: middle;
+    }
 
-.inner-header {
-  height: 95vh;
-  width:100%;
-  /* margin: 0; */
-  /* padding: 0; */
-}
+    .inner-header {
+      height: 95vh;
+      width:100%;
+      /* margin: 0; */
+      /* padding: 0; */
+    }
 
-.flex { /*Flexbox for containers*/
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+    .flex { /*Flexbox for containers*/
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
-.waves {
-  position:relative;
-  width: 100%;
-  height: 22vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:150px;
-}
+    .waves {
+      position:relative;
+      width: 100%;
+      height: 22vh;
+      margin-bottom:-7px; /*Fix for safari gap*/
+      min-height:100px;
+      max-height:150px;
+    }
 
-.content {
-  position:relative;
-  height:100vh;
-  text-align:center;
-  background-color: white;
-}
+    .content {
+      position:relative;
+      height:100vh;
+      text-align:center;
+      background-color: white;
+    }
 
-/* Animation */
+    /* Animation */
 
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-}
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-@keyframes move-forever {
-  0% {
-   transform: translate3d(-90px,0,0);
-  }
-  100% { 
-    transform: translate3d(85px,0,0);
-  }
-}
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .waves {
-    height:40px;
-    min-height:40px;
-  }
-  .content {
-    height:30vh;
-  }
-  h1 {
-    font-size:24px;
-  }
-}
+    .parallax > use {
+      animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    }
+    .parallax > use:nth-child(1) {
+      animation-delay: -2s;
+      animation-duration: 7s;
+    }
+    .parallax > use:nth-child(2) {
+      animation-delay: -3s;
+      animation-duration: 10s;
+    }
+    .parallax > use:nth-child(3) {
+      animation-delay: -4s;
+      animation-duration: 13s;
+    }
+    .parallax > use:nth-child(4) {
+      animation-delay: -5s;
+      animation-duration: 20s;
+    }
+    @keyframes move-forever {
+      0% {
+      transform: translate3d(-90px,0,0);
+      }
+      100% { 
+        transform: translate3d(85px,0,0);
+      }
+    }
+    /*Shrinking for mobile*/
+    @media (max-width: 768px) {
+      .waves {
+        height:40px;
+        min-height:40px;
+      }
+      .content {
+        height:30vh;
+      }
+      h1 {
+        font-size:24px;
+      }
+    }
 
-.shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgb(0 0 255) !important;
-  background-color: #214b63;
-}
+    .shadow-sm {
+      box-shadow: 0 0.125rem 0.25rem rgb(0 0 255) !important;
+      background-color: #214b63;
+    }
 
-.amr-2 a{
-  margin-right: 10px;
-}
+    .amr-2 a{
+      margin-right: 10px;
+    }
 
-.py-vh-6 {
-    padding-top: 16vh;
-    padding-bottom: 16vh;
-}
-</style>
+    .py-vh-6 {
+        padding-top: 16vh;
+        padding-bottom: 16vh;
+    }
+
+    @media (max-width: 767px) {
+      .carousel-inner .carousel-item > div {
+        display: none;
+      }
+      .carousel-inner .carousel-item > div:first-child {
+        display: block;
+      }
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      display: flex;
+    }
+
+    /* medium and up screens */
+    @media (min-width: 768px) {
+
+      .carousel-inner .carousel-item-end.active,
+      .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+      }
+
+      .carousel-inner .carousel-item-start.active, 
+      .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+      }
+    }
+
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start { 
+      transform: translateX(0);
+    }
+
+  </style>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navScroll">
@@ -189,27 +225,27 @@ p {
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-brand pe-4 fs-4" href="/">
-            <img src="img/logo560x560.png" style="height: 32px; width: 32px;" alt="logo">
-          </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#inicio" aria-label="Inicio">
-              Inicio
+
+          <li class="nav-item">
+            <a class="nav-link navbar-brand pe-4 fs-4" href="/">
+              <img src="img/logo560x560.png" style="height: 32px; width: 32px;" alt="logo">
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Autores">
-              Autores y Obras
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Librerias">
-              Librerias asociadas
-            </a>
-          
+              <a class="nav-link" href="#inicio" aria-label="Inicio">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Autores">
+                Autores y Obras
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Librerias">
+                Librerias asociadas
+              </a>
+            </li>
         </ul>
 
       </div>
@@ -227,12 +263,12 @@ p {
           </div>
           <div class="row" style="height: 80vh">
 
-            <div class="col-lg-12 py-vh-6 mt-10" style="z-index: 10;margin-top: 100px" >
+            <div class="col-lg-12 mt-10" style="z-index: 10;margin-top: 100px" >
               <img src="img/logo560x560.png" alt="." height="300px" data-aos="fade-left"/>
             </div>
-            <div class="col-lg-12 py-vh-6" style="z-index: 1;vertical-align: bottom; text-align:left;" >
+            <div class="col-lg-12" style="z-index: 30;vertical-align: bottom; text-align:left;" >
               <div class="flex" style="margin:0px auto">
-                <h1 >Tsukimoto</h1>
+                <h1 class="text-black"> Tsukimoto</h1>
                 <h2>Editorial</h2>
               </div>
               
@@ -262,7 +298,7 @@ p {
     <section id="we">
       <div class="py-vh-5 w-100 overflow-hidden p-5 mt-5" style="background-color: white;" >
         <div class="container">
-          <div class="row d-flex justify-content-end gy-5">
+          <div id="vision" class="row d-flex justify-content-end gy-5">
             <div class="col col-lg-4 col-md-3" data-aos="fade-down">
               <img class="img-fluid" alt="PIERRE ANDRE LECLERCQ" src="img/himeji.jpg" />
 
@@ -278,7 +314,7 @@ p {
                 </p>
             </div>
           </div>
-          <div class="row d-flex justify-content-end gy-5 mt-5">
+          <div id="mision" class="row d-flex justify-content-end gy-5 mt-5">
             <div class="col-md-7 col-lg-6" data-aos="fade-down" data-aos-delay="400">
               <h3 class="py-5 border-top border-dark text-black-50">¿Cómo lo lograremos? La respuesta es clara...</h3>
               <p>Claro que lo lograremos, aunque para ello necesitemos de la ayuda de todos tenemos un plan para 
@@ -307,6 +343,7 @@ p {
         </div>
       </div>
     </section>
+
     <section id="Autores">
       <!--autores y librerias-->
       <div class="bg-dark w-100 overflow-hidden">
@@ -409,15 +446,93 @@ p {
     </section >
 
     <section id="Librerias">
-
+      <div class="text-center my-3">
+        <div class="row d-flex justify-content-center py-vh-6" style="padding-bottom: 8vh;">
+          <div class="col-12 col-lg-10 col-xl-8 text-center">
+            <h2 class="display-6 text-black-50">Librerias que venden nuestras obras</h2>
+          </div>
+        </div>
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="img/libs/img1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-img-overlay">Slide 1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="img/libs/img2.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-img-overlay">Slide 2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="img/libs/img3.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-img-overlay">Slide 3</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="img/libs/img4.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-img-overlay">Slide 4</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="img/libs/img5.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-img-overlay">Slide 5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="img/libs/img6.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-img-overlay">Slide 6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
 
   </main>
 
   <footer>
-    <div class="container small border-top">
-      <div class="row py-5 d-flex justify-content-between">
+    <div class="small border-top">
+      <div class="row py-5 d-flex justify-content-between"  style="margin-left: 0px;margin-right: 0px;">
 
         <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-layers-half"
@@ -435,16 +550,16 @@ p {
           <h3 class="h6 mb-3 text-black-50" >Nosotros</h3>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Visión</a>
+              <a class="nav-link link-secondary ps-0" aria-current="page" href="#vision">Visión</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-secondary ps-0" href="#">Misión</a>
+              <a class="nav-link link-secondary ps-0" href="#mision">Misión</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-secondary ps-0" href="#">Nuestros autores</a>
+              <a class="nav-link link-secondary ps-0" href="#Autores">Nuestros autores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-secondary ps-0" href="#">Las mejores librerias</a>
+              <a class="nav-link link-secondary ps-0" href="#Librerias">Las mejores librerias</a>
             </li>
           </ul>
         </div>  
@@ -452,13 +567,13 @@ p {
           <h3 class="h6 mb-3 text-black-50">Obras</h3>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Una Historia llamada destino</a>
+              <a class="nav-link link-secondary ps-0" aria-current="page" href="www.unahistoriallamadadestino.cl">Una Historia llamada destino</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-secondary ps-0" href="#">?</a>
+              <a class="nav-link link-secondary ps-0" href="">?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-secondary ps-0" href="#">?</a>
+              <a class="nav-link link-secondary ps-0" href="">?</a>
             </li>
             
           </ul>
@@ -502,5 +617,23 @@ p {
     })
   </script>
   <script src="https://kit.fontawesome.com/b98cee38da.js" crossorigin="anonymous"></script>
+  <script>
+
+    let items = document.querySelectorAll('.carousel .carousel-item')
+
+    items.forEach((el) => {
+      const minPerSlide = 4
+      let next = el.nextElementSibling
+      for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+    })
+  </script>
 </body>
 </html>
